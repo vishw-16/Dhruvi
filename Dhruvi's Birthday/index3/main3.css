@@ -1,0 +1,471 @@
+body{
+    background-image: url("forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+#me{
+    display: none;
+    height:140px;
+    width:130px;
+    position: absolute;
+    top:330px;
+    left:480px;
+}
+#me2{
+    height:140px;
+    width:130px;
+    position: absolute;
+    top:330px;
+    left:480px;
+}
+h1{
+    color:rgb(59, 25, 1);
+    text-align: center;
+}
+#box{
+    display: flex;
+    padding: 20px;
+    margin: 40px;
+    justify-content:center;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 85px;
+    text-align: center;
+    position:absolute;
+    top:400px;
+    left:170px;
+}  
+.a1{
+    display: flex;
+    text-align: center;
+    padding:50px;
+    margin:50px;
+    background-color:rgb(20, 30, 1);
+    text-decoration: none;
+    color:rgb(161, 143, 121);
+    width: 100px;
+    height: 60px;
+}
+#ch{
+    position:absolute;
+    top:670px;
+    left:590px;
+    color:rgb(21, 89, 50);
+}
+@keyframes wr{
+    0%{
+        opacity:1;
+        top:330px;
+        left:480px;
+    }
+    50%{
+        opacity:1;
+        top:300px;
+        left:630px;
+    }
+    100%{
+        opacity:0;
+        top:300px;
+        left:630px;
+    }
+}
+#me:target{
+    display: block;
+    animation: wr 7s;
+    animation-iteration-count: 1;
+}
+#me2:target{
+    display: block;
+    animation: wr 7s;
+    animation-iteration-count: 1;
+}
+#me:target ~ #me2{
+    display: none;
+}
+#fi {
+    display: none;
+}
+#fi:target {
+    display:block;
+    animation: run 26s forwards , disappear 2s 25s forwards;
+}
+#fi:target ~ #cr {
+    display: none;
+    
+}
+#fi {
+    background-image: url("me.png");
+    background-size: cover;
+    height: 140px;
+    width: 130px;
+    position: absolute;
+    top:330px;
+    left:480px;    
+}
+#restart{
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top:339px;
+    left:704px;
+    text-decoration: none;
+}
+#fi:target ~ #restart{
+    display: block;
+    animation: disappear 0.01s forwards, appear 2s 26s forwards;
+}
+
+
+@keyframes run{
+    0%{
+      
+        top:330px;
+        left:480px;
+    }
+    3%{
+       
+        top:580px;
+        left:787px;
+    }
+    6%{
+        top:369px;
+        left:1197px;
+    }
+    10%{
+        
+        top:15px;
+        left:923px;
+    }
+    13%{
+        
+        top:274px;
+        left:364px;
+    }
+    16%{
+     
+        top:40px;
+        left:4px;
+    }
+    19%{
+        
+        top:574px;
+        left:1421px;
+    }
+    20%{
+        top:337px;
+        left:656px;
+        }
+    23%{
+      
+        top:330px;
+        left:480px;
+    }
+    26%{
+       
+        top:580px;
+        left:787px;
+    }
+    29%{
+        top:369px;
+        left:1197px;
+    }
+    32%{
+        
+        top:15px;
+        left:923px;
+    }
+    35%{
+        
+        top:274px;
+        left:364px;
+    }
+    37%{
+     
+        top:40px;
+        left:4px;
+    }
+    38%{
+        
+        top:574px;
+        left:1421px;
+    }
+    40%{
+        top:337px;
+        left:656px;
+        }
+    42%{
+      
+        top:330px;
+        left:480px;
+    }
+    45%{
+       
+        top:580px;
+        left:787px;
+    }
+    48%{
+        top:369px;
+        left:1197px;
+    }
+    51%{
+        
+        top:15px;
+        left:923px;
+    }
+    53%{
+        
+        top:274px;
+        left:364px;
+    }
+    56%{
+     
+        top:40px;
+        left:4px;
+    }
+    58%{
+        
+        top:574px;
+        left:1421px;
+    }
+    60%{
+        top:337px;
+        left:656px;
+        }
+    62%{
+      
+        top:330px;
+        left:480px;
+    }
+    65%{
+       
+        top:580px;
+        left:787px;
+    }
+    67%{
+        top:369px;
+        left:1197px;
+    }
+    70%{
+        
+        top:15px;
+        left:923px;
+    }
+    72%{
+        
+        top:274px;
+        left:364px;
+    }
+    75%{
+     
+        top:40px;
+        left:4px;
+    }
+    78%{
+        
+        top:574px;
+        left:1421px;
+    }
+    80%{
+        top:337px;
+        left:656px;
+        }
+    82%{
+      
+        top:330px;
+        left:480px;
+    }
+    84%{
+       
+        top:580px;
+        left:787px;
+    }
+    87%{
+        top:369px;
+        left:1197px;
+    }
+    90%{
+        
+        top:15px;
+        left:923px;
+    }
+    93%{
+        
+        top:274px;
+        left:364px;
+    }
+    96%{
+     
+        top:40px;
+        left:4px;
+    }
+    98%{
+        
+        top:574px;
+        left:1421px;
+    }
+    100%{
+        top:337px;
+        left:656px;
+        }
+    }
+#fi .cover-link {
+    display: block;     
+    width: 100%;        
+    height: 100%;       
+    text-decoration: none;
+}
+#cap .cover-link {
+    display: block;     
+    width: 100%;        
+    height: 100%;       
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+}
+#cap{
+    display: none;
+    background-image: url("mep.png");
+    background-size: cover;
+    height: 270px;
+    width: 230px;
+    position: absolute;   
+    top:417px;
+    left:650px; 
+
+}
+#cap:target{
+    display:block;
+    
+}
+#cap:target + #fi{
+    display: none;
+}
+#cap:target ~ #cr{
+    display: none;
+}
+#caph{
+    color:rgb(1, 82, 20);
+    text-align: center;
+    position: absolute;
+    top:-200px;
+    font-size:40px;
+}
+#pedh{
+    color:rgb(1, 82, 20);
+    text-align: center;
+    position: absolute;
+    top:-190px;
+    font-size:40px;
+    left:-50px
+    }
+#cap2{
+    display:none;
+    background-image: url("ped.png");
+    background-size: cover;
+    height: 350px;
+    width: 300px;
+    position: absolute;   
+    top:350px;
+    left:650px;
+}
+#cap2:target ~ #cr {
+    display: none;
+}
+#cap2:target ~ #fi {
+    display: none;
+}
+#cap2:target + #cap {
+    display: none;
+}
+#cap2:target{
+    display: block;
+    animation: disappear 2s forwards;
+    animation-delay: 2s;
+}
+#cap2:target ~ #jailt{
+    display: block;
+    animation: appear 25s forwards;
+    
+}
+#cap2 .cover-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+}
+#jail{
+    display:none;
+    background-image: url("jail.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+#jail:target{
+    display:block;
+}
+#jailt{
+    display: none;
+    position: absolute;
+    top:100px;
+    z-index: 100;
+    
+}
+@keyframes appear{
+    0%{opacity:0;z-index: -1;display: none;}
+    100%{opacity:1;z-index: 100;display: block;}
+}
+@keyframes disappear{
+    0%{opacity:1;z-index: 100;}
+    100%{opacity:0;z-index: -1;}
+}
+#jail:target ~ #jailt{
+    display:none;
+}
+#jail:target ~ #cr{
+    display:none;
+}
+#jail:target ~ #fi{
+    display:none;
+}
+#jail:target ~ #cap{
+    display:none;
+}
+#jail:target ~ #cap2{
+    display:none;
+}
+#jail:target{
+    display: block;
+}
+#jail a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    position: absolute;
+    top:350px;
+    left: 690px;
+    z-index: 100;
+}
+#jailt a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    position: absolute;
+    top:100px;
+    left:660px;
+    z-index: 100;
+}

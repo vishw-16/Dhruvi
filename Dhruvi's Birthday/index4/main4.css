@@ -1,0 +1,197 @@
+#bg{
+    background-image: url("bg5.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+#p1{
+    background-image: url("3.png");
+    background-size: cover;
+    height:70px;
+    width: 30px;
+    position: absolute;   
+    top:10px;
+    left: 76px;
+    transform: rotate(-90deg);
+    opacity: 0.57;
+    z-index: 10;
+}
+#p1 .cl{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 100;
+}
+#p2:target ~ #p1{
+    display: none;
+}
+#p2:target{
+    display: block;
+}
+#p2{
+    display: none;
+    background-image: url("5.png");
+    background-size: cover;
+    height:70px;
+    width: 30px;
+    position: absolute;   
+    top:543px;
+    left: 1506px;
+    opacity:0.7;
+    z-index: 10;
+}
+#p2 .cl{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 100;
+}
+
+#p3:target ~ #p2{
+    display: none;
+}
+#p3:target ~ #p1{
+    display: none;
+}
+#p3:target ~ #bg{
+    display: none;
+}
+#p3:target ~ #bg2{
+    display: block;
+}
+#bg2{
+    background-image: url("bg4.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+#p3{
+    background-image: url("8.png");
+    background-size: cover;
+    height:70px;
+    width: 30px;
+    position: absolute;   
+    top:692px;
+    left:932px;
+    transform: rotate(-90deg);
+    opacity:0.5;
+    z-index: 10;
+}
+#p3 .cl{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 100;
+}
+#p4:target ~ #p3{
+    display: none;
+}
+#p4:target {
+    display: block;
+}
+#p4:target ~ #bg{
+    display: none;
+}
+#p4:target ~ #p1{
+    display: none;
+}
+#p4{
+    display: none;
+    background-image: url("9.png");
+    background-size: cover;
+    height:70px;
+    width: 30px;
+    position: absolute;   
+    top:370px;
+    left: 887px;
+    opacity:0.38;
+    z-index: 10;
+}
+#p4 .cl{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    z-index: 100;
+}
+#p5:target ~ #p4{
+    display: none;
+}
+#p5:target ~ #bg2{
+    display: none;
+}
+#p5:target ~ #bg{
+    display: none;
+}
+#p5:target ~ #p1{
+    display: none;
+}
+#p5:target ~ #p2{
+    display: none;
+}
+#p5:target ~ #p3{
+    display: none;
+}
+#p5:target{
+    display: block;
+    z-index: 100;
+}
+#p5:target ~ h1{
+    display: none;
+}
+#p5{
+    background-color: coral;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+}
+#p5 h1{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 70px;
+    color: white;
+}
+#p5 a{
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 70px;
+    margin-left: 500px;
+    z-index: 100;
+}

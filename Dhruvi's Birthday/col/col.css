@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: burlywood;
+  display:flex;
+}
+
+video {
+  z-index: 10;
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 80vw;
+  object-fit: contain;
+}
+#redirect{
+    position: absolute;
+    
+    text-align: center;
+}
+#redirect a{
+    z-index: -1;
+    position: relative;
+    opacity:0;
+    font-size: 60px;
+    text-decoration: none;
+    color: rgb(156, 195, 228);
+    animation: appear 0.1s 155s forwards;
+}
+@keyframes appear {
+    0%{opacity:0;z-index:-1;}
+    100%{opacity:1;z-index:100;}
+}
