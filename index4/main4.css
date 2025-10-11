@@ -64,7 +64,9 @@ html, body {
     text-decoration: none;
     z-index: 100;
 }
-
+#p3:target{
+    display: block;
+}
 #p3:target ~ #p2{
     display: none;
 }
@@ -88,6 +90,7 @@ html, body {
     position: absolute;
 }
 #p3{
+    display: none;
     background-image: url("8.png");
     background-size: cover;
     height:70px;
