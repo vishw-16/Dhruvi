@@ -109,6 +109,16 @@ h1{
     top:330px;
     left:480px;    
 }
+#fi h2{
+    color: aliceblue;
+    font-size: 30px;
+    display: none;
+    position: fixed;
+    top: 41px;
+    left:475px;
+    text-align: center;
+    align-self: center;
+}
 #restart{
     display: none;
     position: absolute;
@@ -120,9 +130,11 @@ h1{
 }
 #fi:target ~ #restart{
     display: block;
-    animation: disappear 0.01s forwards, appear 2s 26s forwards;
+    animation: disappear 0.00001s forwards, appear 2s 26s forwards;
 }
-
+#fi:target > h2{
+    display:block;
+}
 
 @keyframes run{
     0%{
